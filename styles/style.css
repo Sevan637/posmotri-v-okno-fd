@@ -16,6 +16,18 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  padding:133px 30px;
+}
+
+.content {
+  display: grid;
+  grid-template-areas: 'result-section details-section';
+  grid-template-columns: 711px 399px;
+  align-items: end;
+  gap: 30px;
+  width: 1140px;
+  height: 534px;
 }
 
 h1,
@@ -35,6 +47,45 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+/* Здесь начинаются свойства для секции с результатом*/
+.result__video-container {
+  margin-bottom: 16px;
+  width: 711px;
+  height: 386px;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  gap:40px;
+  margin-top: 16px;
+}
+
+/* Здесь начинаюются свойства для секции со скроллом выбора городов*/
+.content__details {
+  width: 100%;
+  height: 100%;
+}
+
+.search-form__textfield {
+ outline: none;
+}
+
+.content__list-container {
+  height: 534px;
+  overflow: auto;
+}
+
+.title {
+  margin-bottom: 26px;
 }
 
 /* Кастомный скроллбар */
