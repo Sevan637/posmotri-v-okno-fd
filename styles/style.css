@@ -28,23 +28,23 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
+  display: flex;
+  align-items: center;
   margin: auto;
+  padding: 133px 30px;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  display: flex;
-  padding: 133px 30px;
-  align-items: center;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 .content {
   display: grid;
-  grid-template-areas: "result-section details-section";
   grid-template-columns: 711px 399px;
+  grid-template-areas: "result-section details-section";
   align-items: end;
   gap: 30px;
   width: 1140px;
@@ -54,9 +54,9 @@ html {
 /* Здесь начинаются свойства для секции с результатом*/
 .result__video-container {
   position: relative;
-  margin-bottom: 16px;
   width: 711px;
   height: 386px;
+  margin-bottom: 16px;
 }
 
 .result__video {
@@ -68,9 +68,9 @@ html {
 .search-form {
   display: flex;
   justify-content: space-between;
+  align-items: end;
   gap: 40px;
   margin-top: 16px;
-  align-items:end;
   margin-bottom: 3px;
 }
 
@@ -86,23 +86,23 @@ html {
 }
 
 .search-form__textfield {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: transparent;
   min-width: 225px;
+  margin-top: 5px;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-right: 0;
+  border-left: 0;
+  padding-top: 3px;
+  color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 17.5px;
   line-height: 100%;
   letter-spacing: 0;
-  border-width: 1px;
-  border-left: 0;
-  border-right: 0;
-  border-color: #ffffff;
-  color: #fff;
-  margin-top: 5px;
-  padding-top: 3px;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .search-form__textfield:focus {
@@ -115,21 +115,21 @@ html {
 }
 
 .search-form__textfield:active {
-  outline-offset: 0;
   outline: 1px solid #fff;
+  outline-offset: 0;
 }
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 15px;
   align-items: center;
-  padding-bottom: 5px;
+  gap: 15px;
   margin-top: 9px;
+  padding-bottom: 5px;
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
@@ -146,8 +146,8 @@ search-form__label-textpadding-bottom: 5px;
 }
 
 .search-form__label:has(.search-form__checkbox:focus-visible) {
-  outline-offset: 1px;
   outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__label:has(.search-form__checkbox) {
@@ -156,9 +156,9 @@ search-form__label-textpadding-bottom: 5px;
 
 .search-form__pseudo-checkbox::after {
   content: "";
-  display: none;
   position: absolute;
   inset: 1px;
+  display: none;
   background-color: #fff;
 }
 
@@ -173,31 +173,32 @@ search-form__label-textpadding-bottom: 5px;
   letter-spacing: 0;
 }
 
-
 /*  Тут стили для всех кнопок */
 .button {
-  background-color: transparent;
-  text-align: center;
-  color: #fff;
   border: 1px solid #fff;
+  color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 17.5px;
   line-height: 100%;
   letter-spacing: 0;
-  padding-top: 6.5px;
-  padding-bottom: 6.5px;
+  text-align: center;
+  background-color: transparent;
   cursor: pointer;
-  margin-top: 21px;
 }
-
 
 .search-form__submit-button {
   min-width: 194px;
+  margin-top: 21px;
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
 }
 
 .more-button {
   width: 100%;
+  margin-bottom: 1px;
+  padding-top: 9px;
+  padding-bottom: 5px;
 }
 
 .button:active {
@@ -223,8 +224,8 @@ search-form__label-textpadding-bottom: 5px;
 .content__list-container {
   position: relative;
   height: 298px;
+  padding: 0 3px;
   overflow: auto;
-  padding: 3px;
 }
 
 .title {
@@ -245,17 +246,19 @@ search-form__label-textpadding-bottom: 5px;
 .content__list {
   display: flex;
   flex-direction: column;
+  padding-top: 3px;
 }
 
 .content__card-link {
   display: block;
+  margin-bottom: 30px;
   color: #ffffff;
   text-decoration: none;
-  margin-bottom: 30px;
   cursor: pointer;
 }
 
-.content__card-link_current, .content__card-link:active  {
+.content__card-link_current,
+.content__card-link:active {
   background-color: #545050;
 }
 
@@ -273,39 +276,39 @@ search-form__label-textpadding-bottom: 5px;
 
 .content__video-card {
   display: flex;
-  align-items: start;
   justify-content: space-between;
+  align-items: start;
 }
 
 .content__video-card-description-container {
   display: block;
-  padding-right: 7px;
   flex-grow: 1;
+  padding-right: 7px;
 }
 
 .content__video-card-title {
+  display: inline-block;
+  width: 185px;
+  margin-top: 2px;
+  overflow: hidden;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
   letter-spacing: 0;
   text-transform: uppercase;
-  width: 196px;
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
-  margin-top: 2px;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
+  display: -webkit-box;
+  width: 185px;
+  overflow: hidden;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17.5px;
   line-height: 16.2px;
   letter-spacing: 0;
-  width: 196px;
-  overflow: hidden;
-  display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
 }
@@ -319,10 +322,10 @@ search-form__label-textpadding-bottom: 5px;
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 }
