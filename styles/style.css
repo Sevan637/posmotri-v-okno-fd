@@ -54,7 +54,6 @@ html {
 /* Здесь начинаются свойства для секции с результатом*/
 .result__video-container {
   position: relative;
-  grid-area: "result-section";
   margin-bottom: 16px;
   width: 711px;
   height: 386px;
@@ -71,7 +70,12 @@ html {
   justify-content: space-between;
   gap: 40px;
   margin-top: 16px;
-  align-items: end;
+  align-items:end;
+  margin-bottom: 3px;
+}
+
+.search-form__fieldset {
+  border: none;
 }
 
 .search-form__fieldset-title {
@@ -87,9 +91,9 @@ html {
   appearance: none;
   background-color: transparent;
   min-width: 225px;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17.5px;
   line-height: 100%;
   letter-spacing: 0;
   border-width: 1px;
@@ -97,6 +101,8 @@ html {
   border-right: 0;
   border-color: #ffffff;
   color: #fff;
+  margin-top: 5px;
+  padding-top: 3px;
 }
 
 .search-form__textfield:focus {
@@ -117,6 +123,8 @@ html {
   display: flex;
   gap: 15px;
   align-items: center;
+  padding-bottom: 5px;
+  margin-top: 9px;
 }
 
 .search-form__pseudo-checkbox {
@@ -132,7 +140,7 @@ html {
   align-items: center;
   gap: 5px;
 }
-
+search-form__label-textpadding-bottom: 5px;
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
@@ -165,9 +173,6 @@ html {
   letter-spacing: 0;
 }
 
-.search-form__fieldset {
-  border: none;
-}
 
 /*  Тут стили для всех кнопок */
 .button {
@@ -175,13 +180,15 @@ html {
   text-align: center;
   color: #fff;
   border: 1px solid #fff;
-  font-weight: 700;
-  font-size: 18px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 17.5px;
   line-height: 100%;
   letter-spacing: 0;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
   cursor: pointer;
+  margin-top: 21px;
 }
 
 
@@ -209,7 +216,6 @@ html {
 /* Здесь начинаюются свойства для секции со скроллом выбора городов*/
 
 .content__details {
-  grid-area: "details-section";
   width: 100%;
   height: 100%;
 }
@@ -222,7 +228,8 @@ html {
 }
 
 .title {
-  margin-bottom: 26px;
+  margin-top: 1px;
+  margin-bottom: 19px;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
@@ -288,7 +295,7 @@ html {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  margin-bottom: 6px;
+  margin-top: 2px;
 }
 
 .content__video-card-description {
